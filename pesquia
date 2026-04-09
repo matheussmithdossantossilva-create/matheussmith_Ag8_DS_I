@@ -1,0 +1,32 @@
+from py_compile import main
+
+
+excelente = 0
+bom = 0
+ruim = 0
+
+for i in range(50):  
+    print('Entrevistado', i + 1)
+
+    nome = input('Nome: ')
+    idade = int(input('Idade: '))
+    hobby = input('Hobby: ')
+    cor_favorita = input('Cor favorita: ')
+    musica_favorita = input('musica favorita: ')
+    
+    print('1 - Excelente')
+    print('2 - Bom')
+    print('3 - Ruim')
+    op = int(input('Opinião: '))
+
+    if op == 1:
+        excelente += 1
+    elif op == 2:
+        bom += 1
+    elif op == 3:
+        ruim += 1
+
+print('\nResultados:')
+print('Excelente:', excelente)
+print('Bom:', bom)
+print('Ruim:', ruim)
